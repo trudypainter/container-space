@@ -1,5 +1,5 @@
 html {
-  background: url("horizontal.gif") no-repeat center center fixed;
+  background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -54,7 +54,4 @@ a:hover {
     margin: 10px 10px;
   }
 
-  html {
-    background-image: url("vertical3.gif");
-  }
 }
