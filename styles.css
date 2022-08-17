@@ -1,5 +1,5 @@
 html {
-  background: url("horizontal.gif") no-repeat center center fixed;
+  background-color: black;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -36,7 +36,7 @@ html {
 }
 
 a {
-  color: yellowgreen;
+  color: yellow;
   text-decoration: none;
 }
 
@@ -44,17 +44,3 @@ a:hover {
   text-decoration: underline;
 }
 
-@media only screen and (max-width: 1000px) {
-  .info-container {
-    font-size: 40px;
-    padding: 40px;
-    max-width: calc(100vw - 120px);
-  }
-  .text-section {
-    margin: 10px 10px;
-  }
-
-  html {
-    background-image: url("vertical3.gif");
-  }
-}
