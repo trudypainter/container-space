@@ -1,0 +1,91 @@
+@font-face {
+  font-family: "arialn";
+  src: url("arialn.ttf") format("truetype");
+}
+
+html {
+  background-color: white;
+  font-family: "arialn";
+  margin: 0px;
+  padding: 0px;
+}
+
+h1 {
+  margin: 0px;
+}
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  scroll-behavior: smooth;
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+}
+section {
+  scroll-snap-align: start;
+  width: 100%;
+  height: 100vh;
+  padding: 20px 10px;
+}
+
+.content {
+  margin: 16px;
+  font-size: 32px;
+}
+
+.scroll-arrow {
+  position: absolute;
+  bottom: 32px;
+  left: calc(50vw - 30px);
+  color: blue;
+}
+
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.trudy-link {
+  position: absolute;
+  display: flex;
+  bottom: 20px;
+  right: 20px;
+  height: 120px;
+  width: 120px;
+  padding: 10px;
+  background-color: #00ff00;
+  border-radius: 200px;
+  overflow: hidden;
+  text-align: center;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
+
+  color: black;
+  text-decoration: none;
+}
+
+.trudy-link:hover {
+  box-shadow: 0px 0px 32px 0px rgba(0, 255, 0, 0.57);
+  -webkit-box-shadow: 0px 0px 32px 0px rgba(0, 255, 0, 0.57);
+  -moz-box-shadow: 0px 0px 32px 0px rgba(0, 255, 0, 0.57);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.trudy-text {
+  text-align: center;
+  transform: rotate(24deg);
+}
+
+img {
+  width: 70vw;
+  max-height: 60vh;
+  object-fit: contain;
+  object-position: left;
+}
