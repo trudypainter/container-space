@@ -23,6 +23,7 @@ h1 {
   scroll-snap-type: y mandatory;
 }
 section {
+  position: relative;
   scroll-snap-align: start;
   width: 100%;
   height: 100vh;
@@ -30,13 +31,14 @@ section {
 }
 
 .content {
-  margin: 16px;
+  margin: 16px 16px;
   font-size: 32px;
+  width: calc(100vw - 200px);
 }
 
 .scroll-arrow {
   position: absolute;
-  bottom: 32px;
+  bottom: 58px;
   left: calc(50vw - 30px);
   color: blue;
 }
@@ -53,7 +55,7 @@ a:hover {
 .trudy-link {
   position: absolute;
   display: flex;
-  bottom: 20px;
+  bottom: 10px;
   right: 20px;
   height: 120px;
   width: 120px;
@@ -68,6 +70,8 @@ a:hover {
 
   color: black;
   text-decoration: none;
+
+  /* transition: transform 90s; */
 }
 
 .trudy-link:hover {
@@ -76,6 +80,8 @@ a:hover {
   -moz-box-shadow: 0px 0px 32px 0px rgba(0, 255, 0, 0.57);
   cursor: pointer;
   text-decoration: none;
+
+  /* transform: rotate(90000deg); */
 }
 
 .trudy-text {
@@ -85,7 +91,35 @@ a:hover {
 
 img {
   width: 70vw;
-  max-height: 60vh;
+  max-height: calc(100vh - 320px);
   object-fit: contain;
   object-position: left;
+}
+
+.ursula-quote {
+  position: absolute;
+  bottom: 54px;
+  left: 16px;
+  width: 300px;
+}
+.cite {
+  float: right;
+}
+
+.new-work {
+  padding: 2px;
+  color: #00ff00;
+}
+
+.navbar {
+  position: absolute;
+  top: -4px;
+  right: 16px;
+  font-size: 32px;
+  background-color: blue;
+  padding: 16px;
+  padding-top: 20px;
+}
+.navbar a {
+  color: white;
 }
