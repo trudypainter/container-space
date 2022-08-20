@@ -8,6 +8,7 @@ html {
   font-family: "arialn";
   margin: 0px;
   padding: 0px;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -122,4 +123,41 @@ img {
 }
 .navbar a {
   color: white;
+}
+
+@media screen and (max-width: 800px) {
+  .content {
+    width: initial;
+  }
+  .scroll-arrow {
+    bottom: 108px;
+  }
+
+  img {
+    width: calc(100vw - 32px);
+  }
+
+  .navbar {
+    display: flex;
+    top: 0px;
+  }
+  .navbar div {
+    padding: 0px 6px;
+  }
+  section {
+    padding-top: 64px;
+    padding-left: 0px;
+  }
+  body {
+    padding: 0px;
+    margin: 0px;
+  }
+  .trudy-link {
+    width: 100px;
+    height: 100px;
+  }
+  .ursula-quote {
+    position: relative;
+    margin-top: 80px;
+  }
 }
