@@ -130,10 +130,10 @@ img {
 @media screen and (max-width: 800px) {
   .content {
     width: initial;
-    padding-left: 10px;
+    padding-left: 0px;
   }
   .scroll-arrow {
-    bottom: 108px;
+    bottom: 156px;
   }
 
   h1 {
@@ -166,5 +166,6 @@ img {
   .ursula-quote {
     position: relative;
     margin-top: 80px;
+    left: 16px;
   }
 }
