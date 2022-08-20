@@ -21,8 +21,10 @@ h1 {
   height: 100vh;
   scroll-behavior: smooth;
   overflow: auto;
+  overflow-x: hidden;
   scroll-snap-type: y mandatory;
 }
+
 section {
   position: relative;
   scroll-snap-align: start;
@@ -128,9 +130,14 @@ img {
 @media screen and (max-width: 800px) {
   .content {
     width: initial;
+    padding-left: 10px;
   }
   .scroll-arrow {
     bottom: 108px;
+  }
+
+  h1 {
+    font-weight: 900;
   }
 
   img {
