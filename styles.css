@@ -129,6 +129,10 @@ img {
 }
 
 @media screen and (max-width: 800px) {
+  html {
+    letter-spacing: -0.3px;
+  }
+
   .content {
     width: initial;
     padding-left: 0px;
