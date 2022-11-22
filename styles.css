@@ -11,6 +11,8 @@ html {
   padding: 0px;
   overflow-x: hidden;
   overflow-y: hidden;
+
+  cursor: crosshair;
 }
 
 .container {
@@ -39,7 +41,9 @@ section {
 }
 
 .content {
-  margin: 40px 40px;
+  position: absolute;
+  top: 40px;
+  left: 40px;
   font-size: 1.3rem;
   overflow: hidden;
 }
@@ -140,10 +144,10 @@ img {
     letter-spacing: -0.3px;
   }
 
-  .content {
-    width: initial;
-    padding-left: 0px;
+  canvas {
+    visibility: hidden;
   }
+
   .scroll-arrow {
     bottom: 206px;
   }
@@ -174,10 +178,5 @@ img {
   .trudy-link {
     width: 100px;
     height: 100px;
-  }
-  .ursula-quote {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
   }
 }
