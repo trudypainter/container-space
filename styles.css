@@ -13,10 +13,6 @@ html {
   overflow-y: hidden;
 }
 
-h1 {
-  margin: 0px;
-}
-
 .container {
   position: relative;
   width: 100%;
