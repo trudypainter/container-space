@@ -4,11 +4,13 @@
 }
 
 html {
-  background-color: white;
+  background-color: black;
+  color: white;
   font-family: "arialn";
   margin: 0px;
   padding: 0px;
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 h1 {
@@ -25,6 +27,13 @@ h1 {
   scroll-snap-type: y mandatory;
 }
 
+canvas {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -1;
+}
+
 section {
   position: relative;
   scroll-snap-align: start;
@@ -34,9 +43,9 @@ section {
 }
 
 .content {
-  margin: 16px 16px;
-  font-size: 32px;
-  width: calc(100vw - 200px);
+  margin: 40px 40px;
+  font-size: 1.3rem;
+  overflow: hidden;
 }
 
 .scroll-arrow {
@@ -47,12 +56,14 @@ section {
 }
 
 a {
-  color: blue;
-  text-decoration: none;
+  color: white;
+  text-decoration: underline dotted #00ff00;
 }
 
 a:hover {
-  text-decoration: underline;
+  /* text-decoration: underline; */
+  background-color: #00ff00;
+  color: black;
 }
 
 .trudy-link {
@@ -101,8 +112,8 @@ img {
 
 .ursula-quote {
   position: absolute;
-  bottom: 54px;
-  left: 16px;
+  bottom: 40px;
+  left: 40px;
   width: 300px;
 }
 .cite {
@@ -169,8 +180,8 @@ img {
     height: 100px;
   }
   .ursula-quote {
-    position: relative;
-    margin-top: 80px;
-    left: 16px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
   }
 }
